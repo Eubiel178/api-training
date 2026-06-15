@@ -10,6 +10,7 @@ export const pool = new Pool({
 
 async function main() {
   const result = await pool.query("SELECT NOW()");
+
   console.log(result.rows);
 }
 
